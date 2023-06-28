@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <HomeLayout/>,
     children: [
       {
-        path: 'landing',
+        index: true,
         element: <Landing />,
       },
       {
