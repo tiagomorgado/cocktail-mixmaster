@@ -18,7 +18,11 @@ const Error = () => {
     )
   }
   return (
-    <div>Error</div>
+    <Wrapper>
+      <div>
+        <h3>Something Went Wrong</h3>
+      </div>
+    </Wrapper>
   )
 }
 export default Error
