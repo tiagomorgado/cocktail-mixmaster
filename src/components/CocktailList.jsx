@@ -14,6 +14,7 @@ const CocktailList = ({drinks}) => {
         const {idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass} = item
         return {id:idDrink, name:strDrink, image:strDrinkThumb, info:strAlcoholic, glass:strGlass}
     })
+    console.log('formatted', formattedDrinks);
   return (
     <Wrapper>
         {formattedDrinks.map((drink) => {
