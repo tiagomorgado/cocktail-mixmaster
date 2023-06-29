@@ -1,6 +1,6 @@
-const CocktailCard = () => {
+const CocktailCard = ({image, name, id, info, glass}) => {
   return (
-    <div>CocktailCard</div>
+    <h2>CocktailCard</h2>
   )
 }
 export default CocktailCard
