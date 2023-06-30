@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar'
 const HomeLayout = () => {
   const navigation = useNavigation()
   const isPageLoading = navigation.state === 'loading'
-  const value = 'some value'
   return (
     <>
       <Navbar/>
