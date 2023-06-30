@@ -13,9 +13,28 @@ const singleCocktailUrl =
 
 const Cocktail = () => {
   const {id, data} = useLoaderData()
-  const response = axios.get()
+  const singleDrink = data.drinks[0]
+
+  const {
+    strDrink:name, 
+    strDrinkThumb:image,
+    strAlcoholic:info,
+    strCategory:category,
+    strGlass:glass,
+    strINstructions:instructions
+  } = singleDrink
   return (
-    <div>Cocktail</div>
+    <Wrapper>
+      <header>
+        <Link to='/' className='btn'>
+          Back Home
+        </Link>
+        <h3>{name}</h3>
+      </header>
+      <div className='drink'>
+        <img src={image} alt={name} />
+      </div>
+    </Wrapper>
   )
 }
 export default Cocktail
