@@ -1,6 +1,7 @@
 const SearchForm = () => {
   return (
-    <h2>SearchForm</h2>
+    <input type="text" name="" id="" placeholder='look for a cocktail'/>
+    
   )
 }
 export default SearchForm
