@@ -1,4 +1,4 @@
-import { Form, redirect } from 'react-router-dom';
+import { Form, redirect, useNavigation } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
@@ -19,6 +19,8 @@ export const action = async ({request}) => {
 }
 
 const Newsletter = () => {
+  const navigation = useNavigation()
+  const isSubmitting = navigation.state === 'submitting'
   return (
     <Form method='POST' className='form'>
       <h4 style={{textAlign: 'center', marginBottom:'2rem'}}>
