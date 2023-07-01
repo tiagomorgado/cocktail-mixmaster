@@ -47,8 +47,8 @@ const Newsletter = () => {
         <input type="text" className='form-input' name='email' id='email' defaultValue='test@test.com' required/>
       </div>
 
-      <button type='submit' className='btn btn-block' style={{marginTop:'0.5rem'}}>
-        submit
+      <button type='submit' className='btn btn-block' style={{marginTop:'0.5rem'}} disabled={isSubmitting}>
+        {isSubmitting ? 'submitting' : 'submit'}
       </button>
     </Form>
   )
