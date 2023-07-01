@@ -1,7 +1,15 @@
+import Wrapper from "../assets/wrappers/SearchForm"
+import { Form, useNavigation } from "react-router-dom"
+
 const SearchForm = () => {
   return (
-    <input type="text" name="" id="" placeholder='look for a cocktail'/>
-    
+    <Wrapper>
+      <Form className='form'>
+        <input type="search" name="" id="" placeholder='look for a cocktail'/>
+      </Form>
+    </Wrapper>
+   
+
   )
 }
 export default SearchForm
