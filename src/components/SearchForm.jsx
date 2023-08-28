@@ -20,8 +20,6 @@ const SearchForm = ({searchTerm}) => {
         </button>
       </Form>
     </Wrapper>
-   
-
   )
 }
 export default SearchForm
